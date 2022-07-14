@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "title": "zadanie todo 1",
+      "type": "TODO"
+    },
+    {
+      "title": "zadanie todo 2",
+      "type": "TODO"
+    },
+    {
+      "title": "zadanie todo 3",
+      "type": "TODO"
+    },
+    {
+      "title": "zadanie in progress 1",
+      "type": "IN_PROGRESS"
+    },
+    {
+      "title": "zadanie in done 1",
+      "type": "DONE"
+    },
+    {
+      "id": "cb1d2f54-729a-43a9-b8fd-b0386a1adc63",
+      "title": "test",
+      "type": "TODO"
+    },
+    {
+      "id": "a2cefda2-3cf4-46fa-a9d0-64aa9b22dea8",
+      "title": "reactive form test 2",
+      "type": "IN_PROGRESS"
+    },
+    {
+      "id": "f5095772-faff-4af5-a0f2-5f0704c443ae",
+      "title": "test",
+      "type": "TODO"
+    }
+  ]
+}

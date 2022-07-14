@@ -1,0 +1,6 @@
+<div class="border p-2">
+  <h2 class="text-center">{{ taskList?.title }}</h2>
+  <app-task *ngFor="let item of taskList?.tasks"
+        [task]="item"
+  ></app-task>
+</div>

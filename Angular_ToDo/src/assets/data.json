@@ -1,0 +1,26 @@
+[
+  {
+    "title": "zadanie todo 1",
+    "type": "TODO"
+  },
+  {
+    "title": "zadanie todo 2",
+    "type": "TODO"
+  },
+  {
+    "title": "zadanie todo 3",
+    "type": "TODO"
+  },
+  {
+    "title": "zadanie in progress 1",
+    "type": "IN_PROGRESS"
+  },
+  {
+    "title": "zadanie in done 1",
+    "type": "DONE"
+  },
+  {
+    "title": "zadanie in done 2",
+    "type": "DONE"
+  }
+]

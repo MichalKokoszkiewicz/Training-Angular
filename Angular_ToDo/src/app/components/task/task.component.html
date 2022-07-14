@@ -1,0 +1,36 @@
+<div class="border p-1" [appHighlight]="'lightblue'">
+  <div class="row">
+    <h3 class="col">{{ task?.title }}</h3>
+  </div>
+  <div class="row pb-2">
+    <div class="col fst-italic fs-6 text-secondary">
+      {{ task?.id | defaultValue:'[no id]' }}
+    </div>
+  </div>
+  <div class="row justify-content-between">
+    <div class="col-4">
+      <button
+        type="button"
+        (click)="onEditButtonClick()"
+        class="btn btn-sm"
+        [ngClass]="{
+          'btn-primary': task?.id,
+          'btn-secondary': !task?.id
+        }"
+        [disabled]="!task?.id"
+      >edit</button>
+    </div>
+    <div class="col-4 text-end">
+      <button
+        type="button"
+        (click)="onDeleteButtonClick()"
+        class="btn btn-sm"
+        [ngClass]="{
+          'btn-danger': task?.id,
+          'btn-secondary': !task?.id
+        }"
+        [disabled]="!task?.id"
+      >delete</button>
+    </div>
+  </div>
+</div>

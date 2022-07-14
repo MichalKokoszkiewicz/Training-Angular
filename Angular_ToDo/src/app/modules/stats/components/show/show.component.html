@@ -1,0 +1,52 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div class="row">
+      <h2 class="col-12 text-center">
+        Todo List Stats
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        TODO
+      </div>
+      <div class="col-9">
+        <div class="progress">
+          <div
+            class="progress-bar bg-danger"
+            role="progressbar"
+            [ngStyle]="{'width': (data.todo / data.sum * 100) + '%'}"
+          >{{ data.todo }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        IN PROGRESS
+      </div>
+      <div class="col-9">
+        <div class="progress">
+          <div
+            class="progress-bar bg-warning"
+            role="progressbar"
+            [ngStyle]="{'width': (data.inProgress / data.sum * 100) + '%'}"
+          >{{ data.inProgress }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        DONE
+      </div>
+      <div class="col-9">
+
+        <div class="progress">
+          <div
+            class="progress-bar bg-success"
+            role="progressbar"
+            [ngStyle]="{'width': (data.done / data.sum * 100) + '%'}"
+          >{{ data.done }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
